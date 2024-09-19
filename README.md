@@ -41,7 +41,7 @@ O **SIG-Clinic** é uma solução de agendamento desenvolvida como parte da disc
 
 Para mais informações, entre em contato com os desenvolvedores:
 
-- [@riamxpp](https://github.com/riamxpp) - GitHub
-- [@jGean09](https://github.com/jGean09) - GitHub
+- @riamxpp - [GitHub](https://github.com/riamxpp)
+- @jGean09 - [GitHub](https://github.com/jGean09) 
 
 
