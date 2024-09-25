@@ -61,3 +61,16 @@ void tela_deletar_paciete() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+
+void tela_ver_paciente() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                              VER PACIENTE                              ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o CPF do paciente que deseja ver informações:             ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
