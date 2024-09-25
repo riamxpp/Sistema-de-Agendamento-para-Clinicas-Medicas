@@ -16,3 +16,20 @@ void tela_agendamento(void) {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+
+void tela_cadastrar_agendamento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         CADASTRAR AGENDAMENTO                           ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          Data:                                                          ***\n");
+  printf("***          Hora:                                                          ***\n");
+  printf("***          ID do serviço:                                                 ***\n");
+  printf("***          CPF paciente:                                                  ***\n");
+  printf("***          CRE do médico:                                                 ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
