@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <paciente.c>
 
 void tela_menu_principal(void);
 void tela_sobre(void);
