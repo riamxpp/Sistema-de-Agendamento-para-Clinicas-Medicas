@@ -46,3 +46,16 @@ void tela_atualizar_agendamento() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+
+void tela_deletar_agendamento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                           DELETAR AGENDAMENTO                           ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o ID do agendamento:                                      ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
