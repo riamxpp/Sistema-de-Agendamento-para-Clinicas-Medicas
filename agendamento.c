@@ -25,9 +25,22 @@ void tela_cadastrar_agendamento() {
   printf("***                                                                         ***\n");
   printf("***          Data:                                                          ***\n");
   printf("***          Hora:                                                          ***\n");
-  printf("***          ID do serviço:                                                 ***\n");
+  printf("***          ID do agendamento:                                                 ***\n");
   printf("***          CPF paciente:                                                  ***\n");
   printf("***          CRE do médico:                                                 ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
+
+void tela_atualizar_agendamento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         ATUALIZAR AGENDAMENTO                           ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o ID do agendamento                                       ***\n");
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("\n");
