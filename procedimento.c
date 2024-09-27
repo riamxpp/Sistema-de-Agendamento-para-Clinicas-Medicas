@@ -32,3 +32,15 @@ void tela_cadastrar_procedimento() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+void tela_atualizar_procedimento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         ATUALIZAR PROCEDIMENTO                          ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o ID do procedimento que deseja atualizar:                ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
