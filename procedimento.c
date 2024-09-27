@@ -17,3 +17,18 @@ void tela_procedimentos(void) {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+void tela_cadastrar_procedimento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         CADASTRAR PROCEDIMENTO                          ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          ID Procedimento:                                               ***\n");
+  printf("***          Nome:                                                          ***\n");
+  printf("***          Duração:                                                       ***\n");
+  printf("***          CRE:                                                           ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
