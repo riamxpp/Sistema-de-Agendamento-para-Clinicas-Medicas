@@ -13,6 +13,10 @@ void tela_informacoes(void);
 void tela_medico(void);
 void tela_procedimentos(void);
 void tela_sobre_projeto(void);
+void tela_cadastrar_paciente(void);
+void tela_atualizar_paciente(void);
+void tela_deletar_paciente(void);
+void tela_ver_paciente(void);
 
 int main() {
   tela_menu_principal();
@@ -23,6 +27,10 @@ int main() {
   tela_medico();
   tela_procedimentos();
   tela_sobre_projeto();
+  tela_cadastrar_paciente();
+  tela_atualizar_paciente();
+  tela_deletar_paciente();
+  tela_ver_paciente();
   return 0;
 }
 
