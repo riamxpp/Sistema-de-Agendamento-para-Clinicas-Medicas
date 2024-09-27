@@ -18,3 +18,18 @@ void tela_medico(void) {
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
 
+void tela_cadastrar_medico() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         CADASTRAR MÉDICO                              ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          CRE:                                                           ***\n");
+  printf("***          Nome:                                                          ***\n");
+  printf("***          Especialização:                                                ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
+
