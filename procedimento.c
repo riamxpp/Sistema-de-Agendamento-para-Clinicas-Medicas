@@ -56,3 +56,15 @@ void tela_deletar_procedimento() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+void tela_ver_procedimento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                              VER PROCEDIMENTO                           ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o ID do procedimento que deseja ver informações:          ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
