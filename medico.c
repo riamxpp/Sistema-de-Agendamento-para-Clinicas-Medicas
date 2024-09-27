@@ -56,3 +56,15 @@ void tela_deletar_medico() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+void tela_ver_medico() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                              VER MÉDICO                                 ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o CRE do médico que deseja ver informações:               ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
