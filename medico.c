@@ -21,7 +21,7 @@ void tela_medico(void) {
 void tela_cadastrar_medico() {
   printf("\n");
   printf("*******************************************************************************\n");
-  printf("***                         CADASTRAR MÉDICO                              ***\n");
+  printf("***                         CADASTRAR MÉDICO                                ***\n");
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
   printf("***          CRE:                                                           ***\n");
@@ -32,4 +32,15 @@ void tela_cadastrar_medico() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
-
+void tela_atualizar_medico() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         ATUALIZAR MÉDICO                              ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o CRE do médico que deseja atualizar:                     ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
