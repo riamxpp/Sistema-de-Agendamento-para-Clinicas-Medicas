@@ -44,3 +44,15 @@ void tela_atualizar_medico() {
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
+void tela_deletar_medico() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                           DELETAR MÉDICO                                ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***       Informe o CRE do médico que deseja deletar:                       ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+}
