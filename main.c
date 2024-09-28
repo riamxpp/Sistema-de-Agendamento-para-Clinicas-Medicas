@@ -1,36 +1,41 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <paciente.c>
-#include <agendamento.c>
-#include <medico.c>
-#include <procedimento.c>
+#include "funcoes.h"
 
 void tela_menu_principal(void);
 void tela_sobre(void);
-void tela_paciente(void);
-void tela_agendamento(void);
 void tela_informacoes(void);
-void tela_medico(void);
-void tela_procedimentos(void);
 void tela_sobre_projeto(void);
-void tela_cadastrar_paciente(void);
-void tela_atualizar_paciente(void);
-void tela_deletar_paciente(void);
-void tela_ver_paciente(void);
 
 int main() {
-  tela_menu_principal();
   tela_sobre();
-  tela_paciente();
-  tela_agendamento();
+  tela_menu_principal();
   tela_informacoes();
-  tela_medico();
-  tela_procedimentos();
   tela_sobre_projeto();
+
+  tela_paciente();
   tela_cadastrar_paciente();
   tela_atualizar_paciente();
   tela_deletar_paciente();
   tela_ver_paciente();
+
+  tela_agendamento();
+  tela_cadastrar_agendamento();
+  tela_atualizar_agendamento();
+  tela_deletar_agendamento();
+  tela_ver_agendamento();
+  
+  tela_medico();
+  tela_cadastrar_medico();
+  tela_atualizar_medico();
+  tela_deletar_medico();
+  tela_ver_medico();
+  
+  tela_procedimentos();
+  tela_cadastrar_procedimento();
+  tela_atualizar_procedimento();
+  tela_deletar_procedimento();
+  tela_ver_procedimento();
   return 0;
 }
 

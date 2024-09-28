@@ -1,3 +1,6 @@
+#include "funcoes.h"
+#include <stdio.h>
+
 void tela_agendamento(void) {
   printf("\n");
   printf("*******************************************************************************\n");
@@ -25,7 +28,7 @@ void tela_cadastrar_agendamento() {
   printf("***                                                                         ***\n");
   printf("***          Data:                                                          ***\n");
   printf("***          Hora:                                                          ***\n");
-  printf("***          ID do agendamento:                                                 ***\n");
+  printf("***          ID do agendamento:                                             ***\n");
   printf("***          CPF paciente:                                                  ***\n");
   printf("***          CRE do médico:                                                 ***\n");
   printf("***                                                                         ***\n");

@@ -1,3 +1,5 @@
+#include "funcoes.h"
+#include <stdio.h>
 
 void tela_procedimentos(void) {
   printf("\n");

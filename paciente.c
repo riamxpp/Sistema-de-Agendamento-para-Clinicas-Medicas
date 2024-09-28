@@ -1,3 +1,6 @@
+#include "funcoes.h"
+#include <stdio.h>
+
 void tela_paciente() {
   printf("\n");
   printf("*******************************************************************************\n");
@@ -36,7 +39,7 @@ void tela_cadastrar_paciente() {
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
 
-void tela_atualizar_paciete() {
+void tela_atualizar_paciente() {
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         ATUALIZAR PACIENTE                              ***\n");
@@ -49,7 +52,7 @@ void tela_atualizar_paciete() {
   printf("Pressione a tecla <ENTER> para continuar...\n");
 }
 
-void tela_deletar_paciete() {
+void tela_deletar_paciente() {
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                           DELETAR PACIENTE                              ***\n");
