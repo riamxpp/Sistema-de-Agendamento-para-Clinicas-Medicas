@@ -31,15 +31,7 @@ void tela_atualizar_procedimento();
 void tela_deletar_procedimento();
 void tela_ver_procedimento();
 
-int main() {
-
-  tela_cadastrar_agendamento();
-  tela_atualizar_agendamento();
-  tela_deletar_agendamento();
-  tela_ver_agendamento();
-  
-  
-  
+int main() {  
   tela_cadastrar_procedimento();
   tela_atualizar_procedimento();
   tela_deletar_procedimento();
@@ -330,11 +322,25 @@ void tela_agendamento(void) {
   printf("***                 4. Remover Agendamento                                  ***\n");
   printf("***                 0. Cancelar e sair                                      ***\n");
   printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada:                               ***\n");
-  printf("***                                                                         ***\n");
-  printf("*******************************************************************************\n");
-  printf("\n");
-  printf("Pressione a tecla <ENTER> para continuar...\n");
+  printf("***                 Escolha a opção desejada: ");
+
+  int opcao;
+  
+  scanf("%d", &opcao);
+  switch (opcao) {
+    case 1:
+      tela_cadastrar_agendamento();
+      break;
+    case 2:
+      tela_ver_agendamento();
+      break;
+    case 3:
+      tela_atualizar_agendamento();
+      break;
+    case 4:
+      tela_deletar_agendamento();
+      break;
+  }
 }
 
 void tela_cadastrar_agendamento() {
