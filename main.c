@@ -32,11 +32,6 @@ void tela_deletar_procedimento();
 void tela_ver_procedimento();
 
 int main() {  
-  tela_cadastrar_procedimento();
-  tela_atualizar_procedimento();
-  tela_deletar_procedimento();
-  tela_ver_procedimento();
-
   tela_menu_principal();
   int opcao;
   
@@ -412,12 +407,27 @@ void tela_procedimentos(void) {
   printf("***                 4. Remover Procedimento                                 ***\n");
   printf("***                 0. Cancelar e sair                                      ***\n");
   printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada:                               ***\n");
-  printf("***                                                                         ***\n");
-  printf("*******************************************************************************\n");
-  printf("\n");
-  printf("Pressione a tecla <ENTER> para continuar...\n");
+  printf("***                 Escolha a opção desejada: ");
+
+  int opcao;
+
+  scanf("%d", &opcao);
+  switch (opcao) {
+    case 1:
+      tela_cadastrar_procedimento();
+      break;
+    case 2:
+      tela_ver_procedimento();
+      break;
+    case 3:
+      tela_atualizar_procedimento();
+      break;
+    case 4:
+      tela_deletar_procedimento();
+      break;
+  }
 }
+
 void tela_cadastrar_procedimento() {
   printf("\n");
   printf("*******************************************************************************\n");
