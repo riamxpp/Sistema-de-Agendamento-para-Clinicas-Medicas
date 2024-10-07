@@ -32,10 +32,6 @@ void tela_deletar_procedimento();
 void tela_ver_procedimento();
 
 int main() {
-  tela_cadastrar_paciente();
-  tela_atualizar_paciente();
-  tela_deletar_paciente();
-  tela_ver_paciente();
 
   tela_cadastrar_agendamento();
   tela_atualizar_agendamento();
@@ -242,11 +238,25 @@ void tela_paciente() {
   printf("***                 4. Remover Paciente                                     ***\n");
   printf("***                 0. Cancelar e sair                                      ***\n");
   printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada:                               ***\n");
-  printf("***                                                                         ***\n");
-  printf("*******************************************************************************\n");
-  printf("\n");
-  printf("Pressione a tecla <ENTER> para continuar...\n");
+  printf("***                 Escolha a opção desejada: ");
+
+  int opcao;
+  
+  scanf("%d", &opcao);
+  switch (opcao) {
+    case 1:
+      tela_cadastrar_paciente();
+      break;
+    case 2:
+      tela_ver_paciente();
+      break;
+    case 3:
+      tela_atualizar_paciente();
+      break;
+    case 4:
+      tela_deletar_paciente();
+      break;
+  }
 }
 
 
