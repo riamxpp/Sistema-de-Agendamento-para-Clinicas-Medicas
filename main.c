@@ -42,10 +42,6 @@ int main() {
   tela_deletar_agendamento();
   tela_ver_agendamento();
   
-  tela_cadastrar_medico();
-  tela_atualizar_medico();
-  tela_deletar_medico();
-  tela_ver_medico();
   
   
   tela_cadastrar_procedimento();
@@ -129,10 +125,6 @@ void tela_menu_principal(void) {
   printf("***                 0. Sair                                                 ***\n");
   printf("***                                                                         ***\n");
   printf("***                 Escolha a opção desejada: ");
-  // printf("***                                                                         ***\n");
-  // printf("*******************************************************************************\n");
-  // printf("\n");
-  // printf("Pressione a tecla <ENTER> para continuar...\n");
 }
 
 void tela_informacoes(void) {
@@ -165,11 +157,25 @@ void tela_medico(void) {
   printf("***                 4. Remover Médico                                       ***\n");
   printf("***                 0. Cancelar e sair                                      ***\n");
   printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada:                               ***\n");
-  printf("***                                                                         ***\n");
-  printf("*******************************************************************************\n");
-  printf("\n");
-  printf("Pressione a tecla <ENTER> para continuar...\n");
+  printf("***                 Escolha a opção desejada: ");
+  
+  int opcao;
+  
+  scanf("%d", &opcao);
+  switch (opcao) {
+    case 1:
+      tela_cadastrar_medico();
+      break;
+    case 2:
+      tela_ver_medico();
+      break;
+    case 3:
+      tela_atualizar_medico();
+      break;
+    case 4:
+      tela_deletar_medico();
+      break;
+  }
 }
 
 void tela_cadastrar_medico() {
