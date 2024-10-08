@@ -90,6 +90,7 @@ void tela_sobre(void) {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_menu_principal(void) { 
@@ -125,6 +126,7 @@ void tela_informacoes(void) {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 //MEDICOS
@@ -174,6 +176,7 @@ void tela_cadastrar_medico() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 void tela_atualizar_medico() {
   printf("\n");
@@ -186,6 +189,7 @@ void tela_atualizar_medico() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 void tela_deletar_medico() {
   printf("\n");
@@ -198,6 +202,7 @@ void tela_deletar_medico() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 void tela_ver_medico() {
   printf("\n");
@@ -210,6 +215,7 @@ void tela_ver_medico() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 //PACIENTE
@@ -263,6 +269,7 @@ void tela_cadastrar_paciente() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_atualizar_paciente() {
@@ -276,6 +283,7 @@ void tela_atualizar_paciente() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_deletar_paciente() {
@@ -289,6 +297,7 @@ void tela_deletar_paciente() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_ver_paciente() {
@@ -302,6 +311,7 @@ void tela_ver_paciente() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 // AGENDAMENTO
@@ -353,6 +363,7 @@ void tela_cadastrar_agendamento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_atualizar_agendamento() {
@@ -366,6 +377,7 @@ void tela_atualizar_agendamento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_deletar_agendamento() {
@@ -379,6 +391,7 @@ void tela_deletar_agendamento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 void tela_ver_agendamento() {
@@ -392,6 +405,7 @@ void tela_ver_agendamento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 
 //PROCEDIMENTO
@@ -442,6 +456,7 @@ void tela_cadastrar_procedimento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 void tela_atualizar_procedimento() {
   printf("\n");
@@ -454,6 +469,7 @@ void tela_atualizar_procedimento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 void tela_deletar_procedimento() {
   printf("\n");
@@ -466,6 +482,7 @@ void tela_deletar_procedimento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
 void tela_ver_procedimento() {
   printf("\n");
@@ -478,4 +495,5 @@ void tela_ver_procedimento() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
 }
