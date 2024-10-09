@@ -32,30 +32,33 @@ void tela_deletar_procedimento();
 void tela_ver_procedimento();
 
 int main() {  
-  tela_menu_principal();
   int opcao;
-  
-  scanf("%d", &opcao);
-  switch (opcao) {
-    case 1:
-      tela_paciente();
-      break;
-    case 2:
-      tela_medico();
-      break;
-    case 3:
-      tela_procedimentos();
-      break;
-    case 4:
-      tela_agendamento();
-      break;
-    case 5:
-      tela_informacoes();
-      break;
-    case 6:
-      tela_sobre();
-      break;
-  }
+  do{
+    tela_menu_principal();
+    scanf("%d", &opcao);
+    getchar();
+    switch (opcao) {
+      case 1:
+        tela_paciente();
+        break;
+      case 2:
+        tela_medico();
+        break;
+      case 3:
+        tela_procedimentos();
+        break;
+      case 4:
+        tela_agendamento();
+        break;
+      case 5:
+        tela_informacoes();
+        break;
+      case 6:
+        tela_sobre();
+        break;
+    }
+  }while( opcao != 0);
+    
   return 0;
 }
 
@@ -147,6 +150,7 @@ void tela_medico(void) {
   int opcao;
   
   scanf("%d", &opcao);
+  getchar();
   switch (opcao) {
     case 1:
       tela_cadastrar_medico();
@@ -236,6 +240,7 @@ void tela_paciente() {
   int opcao;
   
   scanf("%d", &opcao);
+  getchar();
   switch (opcao) {
     case 1:
       tela_cadastrar_paciente();
@@ -248,6 +253,9 @@ void tela_paciente() {
       break;
     case 4:
       tela_deletar_paciente();
+      break;
+    default:
+      printf("Valor invalido");
       break;
   }
 }
@@ -283,6 +291,7 @@ void tela_atualizar_paciente() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
+  fflush(stdin);
   getchar();
 }
 
@@ -332,6 +341,7 @@ void tela_agendamento(void) {
   int opcao;
   
   scanf("%d", &opcao);
+  getchar();
   switch (opcao) {
     case 1:
       tela_cadastrar_agendamento();
@@ -426,6 +436,7 @@ void tela_procedimentos(void) {
   int opcao;
 
   scanf("%d", &opcao);
+  getchar();
   switch (opcao) {
     case 1:
       tela_cadastrar_procedimento();
