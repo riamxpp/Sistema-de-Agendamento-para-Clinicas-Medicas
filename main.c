@@ -6,6 +6,15 @@ void tela_sobre(void);
 void tela_informacoes(void);
 void tela_sobre_projeto(void);
 
+
+// RELATORIO
+void tela_relatorio(void);
+void tela_relatorio_medico(void);
+void tela_relatorio_paciente(void);
+void tela_relatorio_procedimento(void);
+void tela_relatorio_agendamento(void);
+
+
 // MÉDICO
 void tela_medico(void);
 void tela_cadastrar_medico();
@@ -51,9 +60,12 @@ int main() {
         tela_agendamento();
         break;
       case 5:
-        tela_informacoes();
+        tela_relatorio();
         break;
       case 6:
+        tela_informacoes();
+        break;
+      case 7:
         tela_sobre();
         break;
       case 0:
@@ -135,6 +147,110 @@ void tela_informacoes(void) {
   printf("Pressione a tecla <ENTER> para continuar...\n");
   getchar();
 }
+void tela_relatorio(void){
+  int opcao;
+  do{
+    printf("\n");
+    printf("*******************************************************************************\n");
+    printf("***                                                                         ***\n");
+    printf("***                         Relátorio Geral                                 ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 1. Relátorio Módulo Paciente                            ***\n");
+    printf("***                 2. Relátorio Módulo Médico                              ***\n");
+    printf("***                 3. Relátorio Módulo Procedimento                        ***\n");
+    printf("***                 4. Relátorio Módulo Agendamento                         ***\n");                   
+    printf("***                 0. Sair                                                 ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 Escolha a opção desejada: ");
+    scanf("%d",opcao);
+    getchar();
+    switch (opcao)
+    {
+    case 1:
+      tela_relatorio_paciente();
+      break;
+    case 2:
+      tela_relatorio_medico();
+      break;
+    case 3:
+      tela_relatorio_procedimento();
+      break;
+    case 4:
+      tela_relatorio_agendamento();
+      break;
+    case 0:
+      break;
+    default:
+      break;
+    }
+  }while(opcao != 0);
+}
+void tela_relatorio_medico() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         RELATORIO MÉDICO                                ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          CRE:                                                           ***\n");
+  printf("***          Nome:                                                          ***\n");
+  printf("***          Especialização:                                                ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
+}
+void tela_relatorio_paciente() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         RELATORIO PACIENTE                              ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          Nome:                                                          ***\n");
+  printf("***          CPF:                                                           ***\n");
+  printf("***          Data de nascimento:                                            ***\n");
+  printf("***          Celular:                                                       ***\n");
+  printf("***          Email:                                                         ***\n");
+  printf("***          Endereço:                                                      ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
+}
+void tela_relatorio_procedimento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         RELATORIO PROCEDIMENTO                          ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          ID Procedimento:                                               ***\n");
+  printf("***          Nome:                                                          ***\n");
+  printf("***          Duração:                                                       ***\n");
+  printf("***          CRE:                                                           ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
+}
+void tela_relatorio_agendamento() {
+  printf("\n");
+  printf("*******************************************************************************\n");
+  printf("***                         RELATORIO AGENDAMENTO                           ***\n");
+  printf("*******************************************************************************\n");
+  printf("***                                                                         ***\n");
+  printf("***          Data:                                                          ***\n");
+  printf("***          Hora:                                                          ***\n");
+  printf("***          ID do agendamento:                                             ***\n");
+  printf("***          CPF paciente:                                                  ***\n");
+  printf("***          CRE do médico:                                                 ***\n");
+  printf("***                                                                         ***\n");
+  printf("*******************************************************************************\n");
+  printf("\n");
+  printf("Pressione a tecla <ENTER> para continuar...\n");
+  getchar();
+}
 
 //MEDICOS
 void tela_medico(void) {
@@ -176,6 +292,7 @@ void tela_medico(void) {
     }
   }while(opcao != 0);
 }
+
 
 void tela_cadastrar_medico() {
   printf("\n");
