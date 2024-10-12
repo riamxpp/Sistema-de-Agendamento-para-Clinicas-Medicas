@@ -10,7 +10,8 @@
 *.ko
 *.obj
 *.elf
-
+main.o
+main
 # Linker output
 *.ilk
 *.map
@@ -62,7 +63,7 @@ dkms.conf
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
-
+.vscode
 # Local History for Visual Studio Code
 .history/
 
@@ -73,5 +74,8 @@ dkms.conf
 # Ignore all local history of files
 .history
 .ionide
+
+
+
 
 # End of https://www.toptal.com/developers/gitignore/api/c,visualstudiocode
