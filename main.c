@@ -14,7 +14,6 @@ void tela_relatorio_paciente(void);
 void tela_relatorio_procedimento(void);
 void tela_relatorio_agendamento(void);
 
-
 // MÉDICO
 void tela_medico(void);
 void tela_cadastrar_medico();
@@ -79,6 +78,7 @@ int main() {
 }
 
 void tela_sobre(void) {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -113,6 +113,7 @@ void tela_sobre(void) {
 }
 
 void tela_menu_principal(void) { 
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -131,6 +132,7 @@ void tela_menu_principal(void) {
 }
 
 void tela_informacoes(void) {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -150,6 +152,7 @@ void tela_informacoes(void) {
 void tela_relatorio(void){
   int opcao;
   do{
+    system("clear||cls");
     printf("\n");
     printf("*******************************************************************************\n");
     printf("***                                                                         ***\n");
@@ -162,7 +165,7 @@ void tela_relatorio(void){
     printf("***                 0. Sair                                                 ***\n");
     printf("***                                                                         ***\n");
     printf("***                 Escolha a opção desejada: ");
-    scanf("%d",opcao);
+    scanf("%d",&opcao);
     getchar();
     switch (opcao)
     {
@@ -186,6 +189,7 @@ void tela_relatorio(void){
   }while(opcao != 0);
 }
 void tela_relatorio_medico() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         RELATORIO MÉDICO                                ***\n");
@@ -201,6 +205,7 @@ void tela_relatorio_medico() {
   getchar();
 }
 void tela_relatorio_paciente() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         RELATORIO PACIENTE                              ***\n");
@@ -219,6 +224,7 @@ void tela_relatorio_paciente() {
   getchar();
 }
 void tela_relatorio_procedimento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         RELATORIO PROCEDIMENTO                          ***\n");
@@ -235,6 +241,7 @@ void tela_relatorio_procedimento() {
   getchar();
 }
 void tela_relatorio_agendamento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         RELATORIO AGENDAMENTO                           ***\n");
@@ -256,6 +263,7 @@ void tela_relatorio_agendamento() {
 void tela_medico(void) {
   int opcao;
   do{
+    system("clear||cls");
     printf("\n");
     printf("*******************************************************************************\n");
     printf("***                                                                         ***\n");
@@ -295,6 +303,7 @@ void tela_medico(void) {
 
 
 void tela_cadastrar_medico() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         CADASTRAR MÉDICO                                ***\n");
@@ -310,6 +319,7 @@ void tela_cadastrar_medico() {
   getchar();
 }
 void tela_atualizar_medico() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         ATUALIZAR MÉDICO                              ***\n");
@@ -323,6 +333,7 @@ void tela_atualizar_medico() {
   getchar();
 }
 void tela_deletar_medico() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                           DELETAR MÉDICO                                ***\n");
@@ -336,6 +347,7 @@ void tela_deletar_medico() {
   getchar();
 }
 void tela_ver_medico() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                              VER MÉDICO                                 ***\n");
@@ -353,6 +365,7 @@ void tela_ver_medico() {
 void tela_paciente() {
   int opcao;
   do{
+    system("clear||cls");
     printf("\n");
     printf("*******************************************************************************\n");
     printf("***                                                                         ***\n");
@@ -392,6 +405,7 @@ void tela_paciente() {
 
 
 void tela_cadastrar_paciente() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         CADASTRAR PACIENTE                              ***\n");
@@ -411,6 +425,7 @@ void tela_cadastrar_paciente() {
 }
 
 void tela_atualizar_paciente() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         ATUALIZAR PACIENTE                              ***\n");
@@ -425,6 +440,7 @@ void tela_atualizar_paciente() {
 }
 
 void tela_deletar_paciente() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                           DELETAR PACIENTE                              ***\n");
@@ -439,6 +455,7 @@ void tela_deletar_paciente() {
 }
 
 void tela_ver_paciente() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                              VER PACIENTE                              ***\n");
@@ -454,6 +471,7 @@ void tela_ver_paciente() {
 
 // AGENDAMENTO
 void tela_agendamento(void) {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -491,6 +509,7 @@ void tela_agendamento(void) {
 }
 
 void tela_cadastrar_agendamento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         CADASTRAR AGENDAMENTO                           ***\n");
@@ -509,6 +528,7 @@ void tela_cadastrar_agendamento() {
 }
 
 void tela_atualizar_agendamento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         ATUALIZAR AGENDAMENTO                           ***\n");
@@ -523,6 +543,7 @@ void tela_atualizar_agendamento() {
 }
 
 void tela_deletar_agendamento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                           DELETAR AGENDAMENTO                           ***\n");
@@ -537,6 +558,7 @@ void tela_deletar_agendamento() {
 }
 
 void tela_ver_agendamento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                              VER AGENDAMENTO                            ***\n");
@@ -552,6 +574,7 @@ void tela_ver_agendamento() {
 
 //PROCEDIMENTO
 void tela_procedimentos(void) {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                                                                         ***\n");
@@ -589,6 +612,7 @@ void tela_procedimentos(void) {
 }
 
 void tela_cadastrar_procedimento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         CADASTRAR PROCEDIMENTO                          ***\n");
@@ -605,6 +629,7 @@ void tela_cadastrar_procedimento() {
   getchar();
 }
 void tela_atualizar_procedimento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                         ATUALIZAR PROCEDIMENTO                          ***\n");
@@ -618,6 +643,7 @@ void tela_atualizar_procedimento() {
   getchar();
 }
 void tela_deletar_procedimento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                           DELETAR PROCEDIMENTO                          ***\n");
@@ -631,6 +657,7 @@ void tela_deletar_procedimento() {
   getchar();
 }
 void tela_ver_procedimento() {
+  system("clear||cls");
   printf("\n");
   printf("*******************************************************************************\n");
   printf("***                              VER PROCEDIMENTO                           ***\n");
