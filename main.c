@@ -33,6 +33,7 @@ void tela_ver_procedimento();
 
 int main() {  
   int opcao;
+  do{
     tela_menu_principal();
     scanf("%d", &opcao);
     getchar();
@@ -55,11 +56,13 @@ int main() {
       case 6:
         tela_sobre();
         break;
+      case 0:
+      break;
       default:
       printf("Valor invalido");
       break;
     }
-    
+  }while(opcao != 0);
   return 0;
 }
 
@@ -148,7 +151,6 @@ void tela_medico(void) {
   printf("***                                                                         ***\n");
   printf("***                 Escolha a opção desejada: ");
   int opcao;
-  do{
     scanf("%d", &opcao);
     getchar();
     switch (opcao) {
@@ -169,7 +171,7 @@ void tela_medico(void) {
       break;
       
     }
-  }while (opcao != 0);
+
   
 }
 
@@ -230,40 +232,43 @@ void tela_ver_medico() {
 
 //PACIENTE
 void tela_paciente() {
-  printf("\n");
-  printf("*******************************************************************************\n");
-  printf("***                                                                         ***\n");
-  printf("***                 ------ PACIENTE ------                                  ***\n");
-  printf("***                                                                         ***\n");
-  printf("***                 1. Cadastrar Paciente                                   ***\n");
-  printf("***                 2. Pesquisar Paciente                                   ***\n");
-  printf("***                 3. Atualizar Paciente                                   ***\n");
-  printf("***                 4. Remover Paciente                                     ***\n");
-  printf("***                 0. Cancelar e sair                                      ***\n");
-  printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada: ");
-
   int opcao;
+  do{
+    printf("\n");
+    printf("*******************************************************************************\n");
+    printf("***                                                                         ***\n");
+    printf("***                 ------ PACIENTE ------                                  ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 1. Cadastrar Paciente                                   ***\n");
+    printf("***                 2. Pesquisar Paciente                                   ***\n");
+    printf("***                 3. Atualizar Paciente                                   ***\n");
+    printf("***                 4. Remover Paciente                                     ***\n");
+    printf("***                 0. Cancelar e sair                                      ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 Escolha a opção desejada: ");
   
-  scanf("%d", &opcao);
-  getchar();
-  switch (opcao) {
-    case 1:
-      tela_cadastrar_paciente();
-      break;
-    case 2:
-      tela_ver_paciente();
-      break;
-    case 3:
-      tela_atualizar_paciente();
-      break;
-    case 4:
-      tela_deletar_paciente();
-      break;
-    default:
-      printf("Valor invalido");
-      break;
-  }
+    scanf("%d", &opcao);
+    getchar();
+    switch (opcao) {
+      case 1:
+        tela_cadastrar_paciente();
+        break;
+      case 2:
+        tela_ver_paciente();
+        break;
+      case 3:
+        tela_atualizar_paciente();
+        break;
+      case 4:
+        tela_deletar_paciente();
+        break;
+      case 0:
+        break;
+      default:
+        printf("Valor invalido");
+        break;
+    }
+  }while(opcao != 0);
 }
 
 
@@ -297,7 +302,6 @@ void tela_atualizar_paciente() {
   printf("*******************************************************************************\n");
   printf("\n");
   printf("Pressione a tecla <ENTER> para continuar...\n");
-  fflush(stdin);
   getchar();
 }
 
