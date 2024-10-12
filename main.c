@@ -138,19 +138,20 @@ void tela_informacoes(void) {
 
 //MEDICOS
 void tela_medico(void) {
-  printf("\n");
-  printf("*******************************************************************************\n");
-  printf("***                                                                         ***\n");
-  printf("***                 ------ MÉDICOS ------                                   ***\n");
-  printf("***                                                                         ***\n");
-  printf("***                 1. Cadastrar Médico                                     ***\n");
-  printf("***                 2. Pesquisar Médico                                     ***\n");
-  printf("***                 3. Atualizar Médico                                     ***\n");
-  printf("***                 4. Remover Médico                                       ***\n");
-  printf("***                 0. Cancelar e sair                                      ***\n");
-  printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada: ");
   int opcao;
+  do{
+    printf("\n");
+    printf("*******************************************************************************\n");
+    printf("***                                                                         ***\n");
+    printf("***                 ------ MÉDICOS ------                                   ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 1. Cadastrar Médico                                     ***\n");
+    printf("***                 2. Pesquisar Médico                                     ***\n");
+    printf("***                 3. Atualizar Médico                                     ***\n");
+    printf("***                 4. Remover Médico                                       ***\n");
+    printf("***                 0. Cancelar e sair                                      ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 Escolha a opção desejada: ");
     scanf("%d", &opcao);
     getchar();
     switch (opcao) {
@@ -166,13 +167,14 @@ void tela_medico(void) {
       case 4:
         tela_deletar_medico();
         break;
+      case 0:
+        break;
       default:
       printf("Valor invalido");
       break;
       
     }
-
-  
+  }while(opcao != 0);
 }
 
 void tela_cadastrar_medico() {
