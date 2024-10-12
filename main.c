@@ -33,7 +33,6 @@ void tela_ver_procedimento();
 
 int main() {  
   int opcao;
-  do{
     tela_menu_principal();
     scanf("%d", &opcao);
     getchar();
@@ -56,8 +55,10 @@ int main() {
       case 6:
         tela_sobre();
         break;
+      default:
+      printf("Valor invalido");
+      break;
     }
-  }while( opcao != 0);
     
   return 0;
 }
@@ -146,25 +147,30 @@ void tela_medico(void) {
   printf("***                 0. Cancelar e sair                                      ***\n");
   printf("***                                                                         ***\n");
   printf("***                 Escolha a opção desejada: ");
-  
   int opcao;
+  do{
+    scanf("%d", &opcao);
+    getchar();
+    switch (opcao) {
+      case 1:
+        tela_cadastrar_medico();
+        break;
+      case 2:
+        tela_ver_medico();
+        break;
+      case 3:
+        tela_atualizar_medico();
+        break;
+      case 4:
+        tela_deletar_medico();
+        break;
+      default:
+      printf("Valor invalido");
+      break;
+      
+    }
+  }while (opcao != 0);
   
-  scanf("%d", &opcao);
-  getchar();
-  switch (opcao) {
-    case 1:
-      tela_cadastrar_medico();
-      break;
-    case 2:
-      tela_ver_medico();
-      break;
-    case 3:
-      tela_atualizar_medico();
-      break;
-    case 4:
-      tela_deletar_medico();
-      break;
-  }
 }
 
 void tela_cadastrar_medico() {
@@ -355,6 +361,9 @@ void tela_agendamento(void) {
     case 4:
       tela_deletar_agendamento();
       break;
+    default:
+      printf("Valor invalido");
+      break;
   }
 }
 
@@ -449,6 +458,9 @@ void tela_procedimentos(void) {
       break;
     case 4:
       tela_deletar_procedimento();
+      break;
+    default:
+      printf("Valor invalido");
       break;
   }
 }
