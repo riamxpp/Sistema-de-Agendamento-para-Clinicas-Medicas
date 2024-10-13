@@ -108,7 +108,7 @@ void tela_sobre(void) {
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("\n");
-  printf("Pressione a tecla <ENTER> para continuar...\n");
+  printf("Pressione a tecla <ENTER> para sair...\n");
   getchar();
 }
 
@@ -146,7 +146,7 @@ void tela_informacoes(void) {
   printf("***                                                                         ***\n");
   printf("*******************************************************************************\n");
   printf("\n");
-  printf("Pressione a tecla <ENTER> para continuar...\n");
+  printf("Pressione a tecla <ENTER> para sair...\n");
   getchar();
 }
 void tela_relatorio(void){
