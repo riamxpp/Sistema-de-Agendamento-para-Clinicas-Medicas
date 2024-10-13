@@ -4,7 +4,7 @@
 ### C ###
 # Prerequisites
 *.d
-
+*.vscode
 # Object files
 *.o
 *.ko

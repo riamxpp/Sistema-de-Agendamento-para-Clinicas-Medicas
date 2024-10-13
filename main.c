@@ -574,41 +574,44 @@ void tela_ver_agendamento() {
 
 //PROCEDIMENTO
 void tela_procedimentos(void) {
-  system("clear||cls");
-  printf("\n");
-  printf("*******************************************************************************\n");
-  printf("***                                                                         ***\n");
-  printf("***                 ------ PROCEDIMENTOS ------                             ***\n");
-  printf("***                                                                         ***\n");
-  printf("***                 1. Cadastrar Procedimento                               ***\n");
-  printf("***                 2. Pesquisar Procedimento                               ***\n");
-  printf("***                 3. Atualizar Procedimento                               ***\n");
-  printf("***                 4. Remover Procedimento                                 ***\n");
-  printf("***                 0. Cancelar e sair                                      ***\n");
-  printf("***                                                                         ***\n");
-  printf("***                 Escolha a opção desejada: ");
-
   int opcao;
 
-  scanf("%d", &opcao);
-  getchar();
-  switch (opcao) {
-    case 1:
-      tela_cadastrar_procedimento();
-      break;
-    case 2:
-      tela_ver_procedimento();
-      break;
-    case 3:
-      tela_atualizar_procedimento();
-      break;
-    case 4:
-      tela_deletar_procedimento();
-      break;
-    default:
-      printf("Valor invalido");
-      break;
-  }
+  do {
+    system("clear||cls");
+    printf("\n");
+    printf("*******************************************************************************\n");
+    printf("***                                                                         ***\n");
+    printf("***                 ------ PROCEDIMENTOS ------                             ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 1. Cadastrar Procedimento                               ***\n");
+    printf("***                 2. Pesquisar Procedimento                               ***\n");
+    printf("***                 3. Atualizar Procedimento                               ***\n");
+    printf("***                 4. Remover Procedimento                                 ***\n");
+    printf("***                 0. Cancelar e sair                                      ***\n");
+    printf("***                                                                         ***\n");
+    printf("***                 Escolha a opção desejada: ");
+
+    scanf("%d", &opcao);
+    getchar();
+    switch (opcao) {
+      case 1:
+        tela_cadastrar_procedimento();
+        break;
+      case 2:
+        tela_ver_procedimento();
+        break;
+      case 3:
+        tela_atualizar_procedimento();
+        break;
+      case 4:
+        tela_deletar_procedimento();
+        break;
+      default:
+        printf("Valor invalido");
+        break;
+    }
+  } while(opcao != 0);
+
 }
 
 void tela_cadastrar_procedimento() {
