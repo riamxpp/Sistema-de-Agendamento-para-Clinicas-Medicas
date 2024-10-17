@@ -17,25 +17,25 @@ void tela_relatorio_agendamento(void);
 
 // MÉDICO
 void tela_medico(void);
-void tela_cadastrar_medico();
-void tela_atualizar_medico();
-void tela_deletar_medico();
-void tela_ver_medico();
+void tela_cadastrar_medico(void);
+void tela_atualizar_medico(void);
+void tela_deletar_medico(void);
+void tela_ver_medico(void);
 
 // AGENDAMENTO
 void tela_agendamento(void);
-void tela_cadastrar_agendamento();
-void tela_atualizar_agendamento();
-void tela_deletar_agendamento();
-void tela_ver_agendamento();
+void tela_cadastrar_agendamento(void);
+void tela_atualizar_agendamento(void);
+void tela_deletar_agendamento(void);
+void tela_ver_agendamento(void);
 // PROCEDIMENTOS
 void tela_procedimentos(void);
-void tela_cadastrar_procedimento();
-void tela_atualizar_procedimento();
-void tela_deletar_procedimento();
-void tela_ver_procedimento();
+void tela_cadastrar_procedimento(void);
+void tela_atualizar_procedimento(void);
+void tela_deletar_procedimento(void);
+void tela_ver_procedimento(void);
 
-int main() {  
+int main(void) {  
   int opcao;
   do{
     tela_menu_principal();
