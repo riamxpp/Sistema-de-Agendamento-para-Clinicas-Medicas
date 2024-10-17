@@ -15,12 +15,6 @@ void tela_relatorio_paciente(void);
 void tela_relatorio_procedimento(void);
 void tela_relatorio_agendamento(void);
 
-// MÉDICO
-void tela_medico(void);
-void tela_cadastrar_medico(void);
-void tela_atualizar_medico(void);
-void tela_deletar_medico(void);
-void tela_ver_medico(void);
 
 // AGENDAMENTO
 void tela_agendamento(void);
