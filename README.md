@@ -12,10 +12,10 @@ O **SIG-Clinic** é uma solução de agendamento desenvolvida como parte da disc
 
 ## Funcionalidades 🛠️
 
-- **Cadastro de Pacientes**: Adicione, edite, visualize e exclua informações dos pacientes.
-- **Agendamento de Consultas**: Agende, visualize, edite e cancele consultas.
-- **Gestão de Médicos**: Adicione, edite, visualize e exclua médicos e suas especialidades.
-- **Relatórios**: Gere e visualize relatórios detalhados de consultas e pacientes.
+- **Cadastro de Pacientes**: Adicionar, editar, visualizar e excluir informações dos pacientes.
+- **Agendamento de Consultas**: Agendar, visualizar, editar e cancelar consultas.
+- **Gestão de Médicos**: Adicionar, editar, visualizar e excluir médicos e suas especialidades.
+- **Relatórios**: Gerar e visualizar relatórios detalhados de consultas e pacientes.
 
 ---
 
@@ -36,6 +36,23 @@ O **SIG-Clinic** é uma solução de agendamento desenvolvida como parte da disc
 2. Navegue até o diretório do projeto:
    ```sh
    cd Sistema-de-Agendamento-para-Clinicas-Medicas
+3. Crie os arquivos .o de todos os módulos:
+   ``sh
+   gcc -Wall -c agendamento.c informacoes.c main.c medico.c paciente.c procedimento.c relatorio.c
+4. Crie o executável com todos os módulos:
+   ```sh
+   gcc -o Sitema_Agendamento_Clinica_Medicas paciente.o main.o medico.o procedimento.o agendamento.o informacoes.o relatorio.o
+5. Execute o executável:
+   ```sh
+   ./Sitema_Agendamento_Clinica_Medicas
+
+---
+
+## Semana Atual 🚀
+
+**Semana 4** - Progresso conforme as atividades planejadas para esta semana, seguindo as entregas e objetivos estabelecidos.
+
+---
 
 ## Contato 📧
 
