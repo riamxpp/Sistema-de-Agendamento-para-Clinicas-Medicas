@@ -37,7 +37,7 @@ O **SIG-Clinic** é uma solução de agendamento desenvolvida como parte da disc
    ```sh
    cd Sistema-de-Agendamento-para-Clinicas-Medicas
 3. Crie os arquivos .o de todos os módulos:
-   ``sh
+   ```sh
    gcc -Wall -c agendamento.c informacoes.c main.c medico.c paciente.c procedimento.c relatorio.c
 4. Crie o executável com todos os módulos:
    ```sh
